@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --merriText: Merriweather;
+  --kablammo: Kablammo;
+  --primaryText: #24228b;
+  --onHover: #7472c0f5;
+  --popinsFont: Poppins;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e7e8d1;
+  /* height: 11000px; */
+}
+div.left {
+  color: var(--primaryText);
+  font-size: 2.3rem;
+  font-family: Kablammo;
+  /* align-self: flex-end; */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 10px;
+  color: var(--primaryText);
+}
+header {
+  background-color: #d3d4c5;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+ul:first-child {
+  font-family: var(--popinsFont);
+  font-weight: 900;
+  transition: 0.2s all;
+}
+li + li {
+  margin-left: 23px;
+  font-family: var(--popinsFont);
+  font-weight: 900;
+}
+nav a {
+  transition: 0.2s all;
+}
+nav a:hover {
+  color: var(--onHover);
+  cursor: pointer;
+}
+
+/* utility classes */
+.container {
+  width: 93%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav a {
+  text-decoration: none;
+}
+/* main */
+.main {
+  margin-top: 2.5em;
+  font-family: var(--popinsFont);
+  color: var(--primaryText);
+}
+
+.right-main {
+  align-self: center;
+  width: 50%;
+  word-spacing: 0.3em;
+  /* margin-bottom:.3em ; */
+}
+.right-main > h1 {
+  margin-bottom: 0.045em;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+}
+.brown {
+  color: #b85042;
+}
+
+/* Second Section */
+.hr {
+  margin-top: 20vh;
+  border: none;
+  border: 2px solid var(--primaryText);
+}
+.heading_of_secondSection {
+  margin-block: 1em;
+}
+.css {
+  filter: invert(100%);
+}
+.box {
+  background-color: var(--primaryText);
+  color: white;
+  padding: 2em;
+  border-radius: 5px;
+}
+.flex3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.skill {
+  margin-left: 3em;
+}
+.level {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: #8a89dd75;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border-left: 6px solid white;
+  color: white;
+}
+.second-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.second-flex > .box {
+  flex: 1 1 calc(33% - 20px);
+}
+
+/* Project Section */
+.project_card {
+  border: 3px solid #d1caca;
+  border-radius: 10px;
+  width: 33%;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #d1caca;
+  /* padding: 3em; */
+  /* transform: translateY(0); */
+  transition: 0.3s ease-in;
+}
+.project_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 1px 2px 7px #bbacac;
+}
+.project_card .img{
+  background-image: url("to_do_list.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1100px;
+  height: 200px;
+  width: 100%;
+  transition: 0.6s ease-in;
+}
+.project_card .img2{
+  background-image: url("Clone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1100px;
+  height: 200px;
+  width: 100%;
+  transition: 0.6s ease-in;
+}
+.project_card .img3{
+  background-image: url("Dice.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1100px;
+  height: 200px;
+  width: 100%;
+  transition: 0.6s ease-in;
+}
+
+.img:hover {
+  background-position: bottom;
+  background-size: cover;
+}
+.name_of_project,
+.description {
+  padding: 0.5em;
+}
+.project-showcase > .project_card {
+  flex: 1 1 calc(33% - 50px);
+}
+.project_card a:hover{
+  color: var(--onHover);
+}
+.project_card a:focus{
+  color:var(--onHover);
+}
+/* Footer */
+.footer{
+  margin-top: 2em;
+  background-color: #d3d4c5;
+  text-align: center;
+  font-family: var(--popinsFont);
+  padding-block:.5em ;
+  font-size: 1rem;
+  color: var(--primaryText);
+
+}
+i{
+  font-size: 2em;
+  margin-left: .6em;
+  display: inline-block;
+  margin-top: .4em;
+}
+.footer a{
+  text-decoration: none;
+  color: var(--primaryText);
+  transition: 0.2s ease-in;
+
+}
+.footer a:hover{
+  color: var(--onHover);
+
+
+}
+
